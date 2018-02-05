@@ -38,7 +38,7 @@ module Hubspot
         response
       end
 
-      protected
+      # protected
 
       def log_request_and_response(uri, response, body=nil)
         Hubspot::Config.logger.info "Hubspot: #{uri}.\nBody: #{body}.\nResponse: #{response.code} #{response.body}"
