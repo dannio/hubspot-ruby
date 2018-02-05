@@ -97,7 +97,7 @@ module Hubspot
         end
 
         response = Hubspot::Connection.get_json(path, params)
-        raise Hubspot::ApiError if batch_mode
+        # raise Hubspot::ApiError if batch_mode
         new(response)
       end
 
